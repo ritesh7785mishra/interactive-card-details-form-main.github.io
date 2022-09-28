@@ -1,0 +1,334 @@
+*{
+    font-size: 18px;
+    
+    box-sizing:border-box;
+    margin:0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    object-fit: cover;
+    width:100%;
+}
+
+/* --------------------------
+           TYPOGRAPHY
+   ------------------------- */
+
+   .card__number{
+        color:white;
+   }
+  
+
+   .confirm__btn{
+        background-color: hsl(278, 68%, 11%);
+        color:white;
+   }
+
+   /* ------------------------------------
+                    LAYOUT
+      ----------------------------------- */
+
+
+.main{
+   width: 375px;
+   margin: 0 auto;
+   height: 100vh;
+}
+
+.left__section{
+  color:white;
+  height: 45%;
+  position: relative;
+}
+
+.bg__img{
+    height: 75%;
+}
+
+.cardFront__bg{
+   width: 16em;
+   position: absolute;
+   left: 1em;
+   bottom: 2em;
+   z-index: 1;
+}
+.cardBack__bg{
+   width: 16em;
+   position:absolute;
+   right: 1em;
+   top:2em;
+}
+
+.circles{
+  
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  top: 8em;
+  left: 2em;
+}
+
+.white__circle{
+   width: 1.55em;
+   height: 1.5em;
+   border-radius: 100%;
+   background-color: white;
+   margin-right: .3em;
+}
+.transparent__circle{
+   width: 0.75em;
+   height: 0.75em;
+   border-radius: 100%;
+   border: solid white 1px;
+}
+
+.card__number{
+  position: absolute;
+  bottom: 5em;
+  left: 2em;
+  color: white;
+  z-index: 1;
+  letter-spacing: 2.5px;
+}
+
+.exp__name{
+  color: white;
+  position:absolute;
+  left: 2em;
+  z-index: 1;
+  display: flex;
+  
+  width: 70%;
+  max-width: 70%;
+}
+.name{
+    font-size: 0.65rem;
+    margin-right:auto;
+}   
+.expiry > span,
+.expiry{
+    font-size: 0.65rem;
+    
+}
+
+.cvc__cardBack{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 9.1em;
+    right: 4.8em;
+    font-size: 0.65rem;
+    font-weight: 500;
+}
+h4{
+    color: hsl(278, 68%, 11%);
+    font-size:0.75rem;
+    letter-spacing: 1px;
+}
+input{
+    width: 100%;
+    border-radius: 7px;
+    padding: 0.3em;
+    margin-top: .8em;
+    margin-bottom: 1.6em;
+    border: solid lightgrey 2px
+}
+.right__section{
+  position: relative;
+  padding: 1em;
+}
+
+.main__content{
+  width: 100%
+}
+
+.before__submit{
+  width: 100%;
+  
+  
+}
+.exp__cvc{
+    display: flex;
+}
+.exp__date{
+    width: 50%;
+
+}
+.exp__title{
+    font-size: 0.75rem;
+}
+.exp__inputMonth{
+    margin-right: 0.5em;
+}
+.cvc{
+    width: 45%;
+    margin-left: 1em;
+}
+.exp__inputContainer{
+    display: flex;
+    width: 100%;
+}
+
+.confirm__btn{
+    width: 100%;
+    border-radius: 7px;
+    padding: .3em 0;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.thankyou{
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-bottom: 1em;
+}
+.added{
+    color: grey;
+    font-size: 1.125em;
+    margin-bottom: 1.8em;
+    font-weight: 500;
+}
+.tick{
+    width: 5em;
+    height: 5em;
+    background-image: url(./images/bg-main-mobile.png);
+    background: linear-gradient(rgb(126, 45, 239),rgb(75, 15, 100));
+    margin: 0 auto;
+    border-radius: 100%;
+    margin-bottom: 2em;
+    
+}
+.tick__logo{
+    width: 2em;
+    margin-top: 1.5em;
+}
+
+@media (min-width: 720px){
+    body{
+       margin: 0;
+    }
+    
+    .main{
+        display: flex;
+        width:1440px;
+    }
+    
+    .left__section{
+        width: 50%;
+        height: 100%;
+        
+    }
+    .bg__img{
+        height: 100%;
+        width: 65%
+    }
+    .cardFront__bg{
+        width:24em;
+        top:8em;
+        left: 9em;
+    }
+    .cardBack__bg{
+        width:23em;
+        top: 23em;
+        right:1em;
+    }
+
+    .circles{
+  
+        display: flex;
+        z-index: 1;
+        position: absolute;
+        align-items: center;
+        top: 9em;
+        left: 10em;
+      }
+      
+      .white__circle{
+         width: 2.4em;
+         height: 2.4em;
+         border-radius: 100%;
+         background-color: white;
+         margin-right: .5em;
+      }
+      .transparent__circle{
+         width: 1.2em;
+         height: 1.2em;
+         border-radius: 100%;
+         border: solid white 1.5px;
+      }
+      
+      .card__number{
+        position: absolute;
+        top:10em;
+        left: 7em;
+        font-size: 1.5rem;
+        color: white;
+        z-index: 1;
+        letter-spacing: 3.5px;
+      }
+      
+      .exp__name{
+        color: white;
+        position:absolute;
+        left: 11.5em;
+        top:20em;
+        z-index: 1;
+        display: flex;
+        font-size: 0.9rem;
+        width: 50%;
+        max-width: 70%;
+        
+      }
+     
+      
+      .cvc__cardBack{
+          
+          z-index: 1;
+          color: white;
+          top: 32em;
+          right: 4em;
+          font-size: 0.9rem;
+          font-weight: 500;
+      }
+    .right__section{
+        width: 50%;
+        height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0 9em;
+    }
+
+    h4{
+        color: hsl(278, 68%, 11%);
+        font-size:1rem;
+        letter-spacing: 1px;
+    }
+    input{
+        width: 100%;
+        border-radius: 7px;
+        padding: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        border: solid lightgrey 2px
+    }
+
+    .exp__title{
+        font-size: 1em;
+    }
+    .confirm__btn{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+}
